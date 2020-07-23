@@ -1,5 +1,5 @@
 import * as actionTypes from './actions';
-import productModel from '../products/model/productModel';
+// import productModel from '../products/model/productModel';
 
 const initialState = {
     items: []
@@ -8,14 +8,23 @@ const initialState = {
 const reducer = ( state = initialState, action ) => {
     switch ( action.type ) {
         case actionTypes.ADD_FOOD_ITEMS:
-            const newItem = {
+            const newItem = [{
                 id: Math.random(),
                 name: 'Burger',
                 keyIngredients: 'Salt',
                 spiceLevel : 'low',
                 type: 'starter',
                 origin: 'asian'
-            }
+            },
+            // {
+            //     id: Math.random(),
+            //     name: 'Pizza',
+            //     keyIngredients: 'SaltPepper',
+            //     spiceLevel : 'medium',
+            //     type: 'main course',
+            //     origin: 'continental'
+            // }
+        ]
             return {
                 ...state,
                 items: state.items.concat( newItem )
