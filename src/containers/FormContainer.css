@@ -1,0 +1,67 @@
+.Input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.Label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.InputElement {
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: white;
+    font: inherit;
+    padding: 6px 10px;
+    display: block;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.InputElement:focus {
+    outline: none;
+    background-color: #ccc;
+}
+
+.Button {
+    text-align: center;
+    border-radius: 5px;
+    width: 6%;
+    background-color: #FC7764;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    display: inline-block;
+    padding: 8px 18px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+}
+
+.Radio {
+    outline: none;
+    border: 2px solid #ccc;
+    background-color: white;
+    font: inherit;
+    padding: 0px 0px;
+    display: block;
+    border-width: 0rem;
+    box-sizing: border-box
+}
+
+.Option {
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: white;
+    font: inherit;
+    padding: 6px 10px;
+    display: block;
+    width: 40%;
+    box-sizing: border-box;
+}

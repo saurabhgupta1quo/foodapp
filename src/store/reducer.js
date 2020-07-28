@@ -10,20 +10,12 @@ const reducer = ( state = initialState, action ) => {
         case actionTypes.ADD_FOOD_ITEMS:
             const newItem = [{
                 id: Math.random(),
-                name: 'Burger',
-                keyIngredients: 'Salt',
-                spiceLevel : 'low',
-                type: 'starter',
-                origin: 'asian'
+                name: [],
+                keyIngredients: [],
+                spiceLevel : [],
+                type: [],
+                origin: []
             },
-            // {
-            //     id: Math.random(),
-            //     name: 'Pizza',
-            //     keyIngredients: 'SaltPepper',
-            //     spiceLevel : 'medium',
-            //     type: 'main course',
-            //     origin: 'continental'
-            // }
         ]
             return {
                 ...state,
@@ -33,7 +25,9 @@ const reducer = ( state = initialState, action ) => {
             return {
                 ...state,
                 items: state.items.filter(item => item.id !== action.itemId)
-            }
+            };
+        default:
+            break;    
     }
     return state;
 };

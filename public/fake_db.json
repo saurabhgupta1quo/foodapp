@@ -1,0 +1,7 @@
+{
+  "name": "",
+  "keyIngredients": "",
+  "spiceLevel": ["low", "medium", "high"],
+  "type": ["starter", "main course", "desert"],
+  "origin": ["asian", "continental", "italian", "etc"]
+}
